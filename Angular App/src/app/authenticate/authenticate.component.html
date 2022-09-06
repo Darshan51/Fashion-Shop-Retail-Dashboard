@@ -1,0 +1,84 @@
+<div class="form-box" >
+    <div class="button-box">
+        <div class="btn" [ngStyle] = "{left : pageDisplayed === 'login' ? '' : '7.5rem'} "></div>
+        <button type="text" class="toggle-btn" (click) = "OnToggle('login')">Login</button>
+        <button type="text" class="toggle-btn" (click) = "OnToggle('register')">Register</button>
+    </div>
+    <form class="log-reg_class"
+     *ngIf = "pageDisplayed === 'login' " 
+     (ngSubmit) = "Onlogin()" 
+     #loginForm = "ngForm">
+        <input 
+         type="text" 
+         
+         name="username" 
+         placeholder="username" 
+         required
+         ngModel
+         #username = "ngModel"
+         >
+        
+         <span *ngIf = "!username.valid && username.touched">Please enter a valid username</span>
+
+        <input 
+        type="current-password" 
+        
+        name="password" 
+        placeholder="Enter Password" 
+        required
+        ngModel
+        #password = "ngModel"
+        >
+        <span *ngIf = "!password.valid && password.touched">Please enter a valid password</span>
+
+        <button type="submit" class="submit-btn">Login</button>
+    </form>
+
+    <form 
+    id="register" 
+    class="log-reg_class" 
+    *ngIf = "pageDisplayed !== 'login'"
+    (ngSubmit) = "OnRegister()"
+    #registerForm = "ngForm"
+    >
+        <input
+        type="text"
+        name="firstname" 
+        placeholder="First Name" 
+        required
+        ngModel
+        >
+        <input 
+        type="text" 
+        
+        name="lastname" 
+        placeholder="Last Name" 
+        required
+        ngModel
+        >
+        <input 
+        type="text" 
+        
+        name="username" 
+        placeholder="username" 
+        required
+        ngModel
+        >
+        <input 
+        type="text" 
+        
+        name="password" 
+        placeholder="password" 
+        required
+        ngModel
+        >
+        <button 
+        type="submit" 
+        class="submit-btn"
+        [disabled] = "!registerForm.valid"
+         >register</button>
+
+        <p *ngIf = "regSuccess" >{{RegistrationResponse}}</p>
+    </form>
+
+</div>

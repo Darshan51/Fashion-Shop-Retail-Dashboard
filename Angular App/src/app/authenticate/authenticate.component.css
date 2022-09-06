@@ -1,0 +1,116 @@
+input.ng-invalid.ng-touched{
+
+    border-bottom: 2px solid rgb(215, 39, 39);
+    border-right: 2px solid rgb(215, 39, 39);
+    box-shadow: 0px 5px 10px -5px red;
+
+}
+
+.form-box {
+    top: 50px;
+    width: 20rem;
+    height: 25rem;
+    position: relative;
+    margin: 3rem auto;
+    background: #79516d69;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.button-box {
+    width: 220px;
+    height: 2rem;
+    margin: 35px auto;
+    position: absolute;
+    margin-left: 2.5rem;
+    box-shadow: 0 0 9px #1f1e1d;
+    border-radius: 30px;
+
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    margin-left: 10px;
+    color: rgba(256, 256, 256, 0.6);
+    color: black;
+
+}
+
+.btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #f3C693;
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+
+
+#login {
+    display: block;
+    transform: 1.5s;
+}
+
+#register {
+    transform: 1.5s;
+}
+
+.log-reg_class {
+    top: 5rem;
+    position: absolute;
+    margin-left: 1rem;
+    width: 18rem;
+    transition: 0.5s;
+    display: block;
+    transform: 1.5s;
+}
+
+
+input {
+    display: block;
+    width: 82%;
+    padding: 10px 5px;
+    margin: 1rem auto;
+    border: 1px solid #999 0 0 0;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 60%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #f3C693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box {
+    margin: 30px 10px 34px 10px;
+}
+
+span {
+    color: rgb(234, 30, 30);
+    font-size: 11px;
+    /* bottom: 68px; */
+    /* position: absolute; */
+}
+
+
+
+#login #register input {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+}

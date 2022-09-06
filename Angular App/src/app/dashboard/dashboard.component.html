@@ -1,0 +1,74 @@
+<main class="main_body">
+    <div class="dashboard_body">
+        <div class="dashboard_box">
+            <i id="dash_icon" class="fa-solid fa-person-chalkboard icons"></i>
+            <h3 id="dashboard_text"><span style="color: rgb(0, 2, 9);font-weight:bold">D</span> ashboard</h3>
+        </div>
+        <div class="report_body">
+            <div class="report_box">
+                <div class="rp_b1">
+                    <i class="fa-solid fa-chart-line icons"></i>
+                    <h4>Stock Total</h4>
+                    <div id="total_sale">
+                        <h3>$ {{totalSale}}</h3>
+                    </div>
+                </div>
+                <div class="percent_change">
+                    <p>
+                        Increased by 60%
+                    </p>
+                </div>
+            </div>
+            <div class="report_box">
+                <div class="rp_b1">
+                    <i class="fa-solid fa-sack-dollar icons" style="--fa-animation-duration: 4s;"></i>
+                    <h4>Total Profit</h4>
+                    <h3 id="total_profit">$ {{totalProfit}} </h3>
+
+                </div> 
+
+                <div class="percent_change">
+                    <p>
+                        Increased by 30%
+                    </p>
+                </div>
+            </div>
+
+            <div class="report_box">
+                <div class="rp_b1">
+                    <i class="fa-regular fa-flag  icons"></i>
+                    <h4> Total Unique visiters</h4>
+                    <div id="uniq_vis" #uniq_vis>
+                        <h3>{{uniqueVisitors}} </h3>
+                    </div>
+                </div>
+                <div class="percent_change">
+                    <p>
+                        Increased by 80%
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="product_sold">
+        <h3>Products Sold Today</h3>
+        <table id="product_details">
+            <tr class="table_row">
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Sale Amount</th>
+                <th>Profit Percentage</th>
+            </tr>
+            <tr *ngFor=" let sale of saleList">
+                <td>{{sale.prod_id}}</td>
+                <td>{{sale.prod_name}}</td>
+                <td>{{sale.desc}}</td>
+                <td>{{sale.sale_amount}}</td>
+                <td>{{sale.profit}}</td>
+            </tr>
+        </table>
+    </div>
+</main>

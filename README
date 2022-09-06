@@ -1,0 +1,29 @@
+# Assignment4
+
+# Instruction to Run and Execute
+
+## After cloning the repository
+
+### Setting Up API server
+
+1. First of install virtualenv in conda environment using command : conda install virtualenv
+2. create virtual environment using the command : virtualenv venv --python=python3.8
+3. Activate the virtual env using the command : source venv/bin/activate
+4. Install the required library
+   Method - 1 : using the command : pip install flask flask_RESTful flask-JWT flask_sqlalchemy
+   Method - 2 : using the requirement.txt file : pip install -r requirement.txt
+
+### Running the server
+
+1. Move to code folder
+2. Open the terminal and move to the folder containing the app.py file and run it using the command : python app.py to start the database server
+
+# Angular
+
+Note : This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+
+1. As of next step open the "Angular App" folder in an intergrated terminal and then run the command
+   `npm install` to install all the dependencies and other requirements.
+2. To start the server run the command `ng serve` or `npm start`
+3. Navigate to `http://localhost:4200/` in chrome browser.
+4. Register and then login.
